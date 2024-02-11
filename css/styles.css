@@ -1,0 +1,13 @@
+
+#datos, #formulario {
+    margin-top: 2rem;
+    padding: 50px; /* Puedes ajustar según sea necesario */
+    border-radius: 3rem;
+    height: 40rem;
+    
+}
+
+
+#datos{
+    width: 80%;
+}

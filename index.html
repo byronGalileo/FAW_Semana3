@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!--
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        -->
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <nav>
+            <div class="nav-wrapper blue lighten-1">
+                <a href="#" class="left brand-logo"><img alt="Galileo" class="brand-logo" src="./assets/Galileo-Sin-slogan.png" style="width:11rem"></a>
+                
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li style="margin-right: 500px;"><h5>Tarea #3</h5></li>
+                    <li style="margin-right: 400px;"><a href="#" onclick="form1()">formulario 1</a></li>
+                    <li style="margin-right: 400px;"><a href="#" onclick="form2()">formulario 2</a></li>
+                </ul>
+            </div>
+        </nav> 
+    </head>
+
+  <body onload="init()">
+    <div class="row">
+        <div class="col s6">
+            <div id="datos" class="blue lighten-1">
+                <p>Nombre: <strong>Byron Garcia</strong></p>
+                <p>Carnet: <strong>22003366</strong></p>
+                <p>Curso: <strong>Fundamentos</strong></p>
+                <p>Año: <strong>2024</strong></p>
+            </div>
+        </div>
+        
+        <div class="col s6">
+            <div id="formulario" class="blue lighten-1">
+                <div id="formulario1">
+                    <div class="row">
+                        <form class="col s12">
+                          <div class="row">
+                            <div class="input-field col s6">
+                              <input  id="first_name" type="text" class="validate">
+                              <label for="first_name">Nombre</label>
+                            </div>
+                            <div class="input-field col s6">
+                              <input id="last_name" type="text" class="validate">
+                              <label for="last_name">Apellido</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <input  id="direccion" type="text" class="validate">
+                              <label for="direccion">Direccion</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s4">
+                               <input type="text" class="datepicker">
+                              <label for="Cumpleaños">Cumpleaños</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input id="carnet" type="text" class="validate">
+                                <label for="carnet">Canet</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input id="mascotas" type="text" class="validate">
+                                <label for="mascotas">Mascotas</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col s12">
+                              This is an inline input field:
+                              <select>
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                              </select>
+                              <label>Direccion</label>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                </div>
+                <div id="formulario2">
+                    <div class="row">
+                        <form class="col s12">
+                          <div class="row">
+                            <div class="input-field col s6">
+                                <div>
+                                    <label for="genero">Genero</label>
+                                </div>
+                              
+                              <p>
+                                <label>
+                                  <input name="group1" type="radio" checked />
+                                  <span>Masculino</span>
+                                </label>
+                              </p>
+                              <p>
+                                <label>
+                                  <input name="group1" type="radio" />
+                                  <span>Femenino</span>
+                                </label>
+                              </p>
+                              
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <div>
+                                        <label for="genero">Escoja el porcentaje de conocimientos:</label>
+                                    </div>
+                                  
+                                    <p class="range-field">
+                                        <label for="html">HTML</label>
+                                        <input type="range" id="html" min="0" max="100" />
+                                    </p>
+                                    <p class="range-field">
+                                        <label for="css">CSS</label>
+                                        <input type="range" id="css" min="0" max="100" />
+                                    </p>
+                                  
+                                </div>
+                           
+                        </form>
+                      </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+       
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html> 
